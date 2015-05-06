@@ -1,27 +1,39 @@
-//
-//  ViewController.m
-//  4.7-字典转模型
-//
-//  Created by 车雨欣 on 15/4/7.
-//  Copyright (c) 2015年 车雨欣. All rights reserved.
-//
+
 
 #import "ViewController.h"
+#import "status.h"
+#import "NSObject+SCExt.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong)NSArray *tmpStatus;
 @end
 
 @implementation ViewController
 
+- (NSArray *)tmpStatus{
+    if (!_tmpStatus) {
+        _tmpStatus = [status statusList];
+    }
+    return _tmpStatus;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//    NSLog(@"%lu",self.tmpStatus.count);
+  
+    
+    
+    
+    //分类测试
+//    [self printAttributeFromDictionaryPlist:@"status.plist"];
+    [self loadPlist:@"status.plist" withType:@"NSDictionary"];
+
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+
 
 @end

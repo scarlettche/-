@@ -14,6 +14,9 @@
 		52646F131AD36C47009EC0D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52646F121AD36C47009EC0D8 /* Images.xcassets */; };
 		52646F161AD36C47009EC0D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52646F141AD36C47009EC0D8 /* LaunchScreen.xib */; };
 		52646F221AD36C47009EC0D8 /* __7______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52646F211AD36C47009EC0D8 /* __7______Tests.m */; };
+		52646F2C1AD36C75009EC0D8 /* status.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52646F2B1AD36C75009EC0D8 /* status.plist */; };
+		52646F2F1AD36D3E009EC0D8 /* status.m in Sources */ = {isa = PBXBuildFile; fileRef = 52646F2E1AD36D3E009EC0D8 /* status.m */; };
+		52646F321AD39DF9009EC0D8 /* NSObject+SCExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 52646F311AD39DF9009EC0D8 /* NSObject+SCExt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		52646F1B1AD36C47009EC0D8 /* 4.7-字典转模型Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "4.7-字典转模型Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52646F201AD36C47009EC0D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52646F211AD36C47009EC0D8 /* __7______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__7______Tests.m"; sourceTree = "<group>"; };
+		52646F2B1AD36C75009EC0D8 /* status.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = status.plist; sourceTree = "<group>"; };
+		52646F2D1AD36D3E009EC0D8 /* status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = status.h; sourceTree = "<group>"; };
+		52646F2E1AD36D3E009EC0D8 /* status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = status.m; sourceTree = "<group>"; };
+		52646F301AD39DF9009EC0D8 /* NSObject+SCExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SCExt.h"; sourceTree = "<group>"; };
+		52646F311AD39DF9009EC0D8 /* NSObject+SCExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SCExt.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +93,13 @@
 				52646F0A1AD36C47009EC0D8 /* AppDelegate.m */,
 				52646F0C1AD36C47009EC0D8 /* ViewController.h */,
 				52646F0D1AD36C47009EC0D8 /* ViewController.m */,
+				52646F301AD39DF9009EC0D8 /* NSObject+SCExt.h */,
+				52646F311AD39DF9009EC0D8 /* NSObject+SCExt.m */,
 				52646F0F1AD36C47009EC0D8 /* Main.storyboard */,
 				52646F121AD36C47009EC0D8 /* Images.xcassets */,
 				52646F141AD36C47009EC0D8 /* LaunchScreen.xib */,
+				52646F2D1AD36D3E009EC0D8 /* status.h */,
+				52646F2E1AD36D3E009EC0D8 /* status.m */,
 				52646F051AD36C47009EC0D8 /* Supporting Files */,
 			);
 			path = "4.7-字典转模型";
@@ -96,6 +108,7 @@
 		52646F051AD36C47009EC0D8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				52646F2B1AD36C75009EC0D8 /* status.plist */,
 				52646F061AD36C47009EC0D8 /* Info.plist */,
 				52646F071AD36C47009EC0D8 /* main.m */,
 			);
@@ -201,6 +214,7 @@
 			files = (
 				52646F111AD36C47009EC0D8 /* Main.storyboard in Resources */,
 				52646F161AD36C47009EC0D8 /* LaunchScreen.xib in Resources */,
+				52646F2C1AD36C75009EC0D8 /* status.plist in Resources */,
 				52646F131AD36C47009EC0D8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +235,9 @@
 			files = (
 				52646F0E1AD36C47009EC0D8 /* ViewController.m in Sources */,
 				52646F0B1AD36C47009EC0D8 /* AppDelegate.m in Sources */,
+				52646F321AD39DF9009EC0D8 /* NSObject+SCExt.m in Sources */,
 				52646F081AD36C47009EC0D8 /* main.m in Sources */,
+				52646F2F1AD36D3E009EC0D8 /* status.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
